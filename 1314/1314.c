@@ -1,5 +1,5 @@
 #include <stdio.h>
-void Reset(char result);
+void Reset(int result);
 int main()
 {
 	int i,j;
@@ -8,7 +8,7 @@ int main()
 	
 	scanf("%d",&n);
 
-	char result = 'A';
+	int result = 65;
 	
 	for(i = 0; i < n; i++)
 	{
@@ -17,7 +17,10 @@ int main()
 			for(j = 0; j < n; j++)
 			{
 				arr[j][i] = result++;
-				Reset(result);
+				if(result > 90)
+				{
+					result = 65;
+				}
 			}
 		}
 		else
@@ -25,7 +28,10 @@ int main()
 			for(j = n - 1; j >= 0; --j)
 			{
 				arr[j][i] = result++;
-				Reset(result);
+				if(result > 90)
+				{
+					result = 65;
+				}
 			}
 		}
 	}
@@ -37,13 +43,5 @@ int main()
 			printf("%c ",arr[i][j]);	
 		}
 		printf("\n");;
-	}
-}
-
-void Reset(char result)
-{
-	if(result > 'Z')
-	{
-		result = 'A';
 	}
 }
