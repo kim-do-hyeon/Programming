@@ -14,20 +14,25 @@ for i in range(list_count):
 # print(result)
 
 w_count = {}
-# for i in range(1):
-#     for test in result[i]:
-#         try :
-#             w_count[test] += 1
-#         except :
-#             w_count[test] = 1
-#     print('\n')
-for i in range(list_count):
+for i in range(1):
     for test in result[i]:
         try :
             w_count[test] += 1
         except :
             w_count[test] = 1
     print('\n')
+# from collections import Counter
+# wordDict = Counter()
+
+# for i in range (list_count):
+#     for word in result[i]:
+#         try :
+#             wordDict[word] += 1
+#         except :
+#             wordDict[word] = 1
+
+# for word, freq in wordDict.most_common(5):
+#     print(word,':', freq)
 
 res = sorted(w_count.items())
 print(res)
