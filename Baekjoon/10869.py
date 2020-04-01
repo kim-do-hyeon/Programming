@@ -1,0 +1,12 @@
+a = input()
+temp = a.split()
+temp1 = int(temp[0])
+temp2 = int(temp[1])
+print(temp1 + temp2)
+print(temp1 - temp2)
+print(temp1 * temp2)
+# test = temp1 / temp2
+# test1 = round(test)
+# print(test1)
+print(temp1 / temp2)
+print(temp1 % temp2)

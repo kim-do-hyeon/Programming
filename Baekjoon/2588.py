@@ -1,0 +1,11 @@
+num1 = int(input())
+num2 = input()
+
+three = int(num2[2])
+two = int(num2[1])
+one = int(num2[0])
+temp = int(num2)
+print(num1 * three)
+print(num1 * two)
+print(num1 * one)
+print(num1 * temp)
